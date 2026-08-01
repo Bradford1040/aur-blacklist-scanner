@@ -1,0 +1,8 @@
+[Unit]
+Description=AUR Blacklist Background Scanner
+After=network-online.target
+
+[Service]
+Type=oneshot
+# We call the universal bash script for maximum compatibility in the background
+ExecStart=/usr/bin/aur-scan-universal

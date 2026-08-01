@@ -1,0 +1,11 @@
+[Unit]
+Description=Run AUR Blacklist Scanner every 12 hours
+
+[Timer]
+# Runs 15 minutes after boot, then every 12 hours
+OnBootSec=15min
+OnUnitActiveSec=12h
+Persistent=true
+
+[Install]
+WantedBy=timers.target

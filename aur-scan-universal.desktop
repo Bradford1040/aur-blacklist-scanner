@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=AUR Blacklist Scan
+Comment=Scan local AUR packages against the latest threat lists
+Exec=/usr/local/bin/aur-scan-universal.sh
+Icon=security-high
+Type=Application
+Terminal=true
