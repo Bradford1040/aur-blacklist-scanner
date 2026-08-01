@@ -33,9 +33,9 @@ Once installed, the tool integrates directly into your desktop environment's app
 
 Open your launcher (Super/Meta key) and search for **AUR Blacklist Scan**.
 
-* Select **(KDE)** if you are running KDE Plasma.
+- Select **(KDE)** if you are running KDE Plasma.
 
-* Select **(Universal)** if you are running any other desktop environment.
+- Select **(Universal)** if you are running any other desktop environment.
 
 ## Enabling Automated Background Scans
 
