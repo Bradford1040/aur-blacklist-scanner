@@ -7,12 +7,13 @@ A lightweight, automated security tool for Arch Linux and Arch-based distributio
 
 ## Features
 
-* **Automated Threat Fetching:** Dynamically pulls the latest threat list directly from the repository before every scan.
-* **Dual-Environment Support:**
-  * `aur-scan-kde`: A Fish script optimized for KDE Plasma users, utilizing Konsole and native window holds.
-  * `aur-scan-universal`: A POSIX-compliant Bash script for all other desktop environments (GNOME, XFCE, Hyprland, etc.).
-* **Active Monitoring:** Includes a systemd user timer to run background checks automatically every 12 hours.
-* **Desktop Alerts:** Triggers native desktop notifications (`notify-send`) if a compromised package is detected during a background scan.
+- The threat [database](https://md.archlinux.org/s/SxbqukK6IA) is automatically synchronized daily at midnight UTC from the Arch Linux community list via GitHub Actions.
+- **Automated Threat Fetching:** Dynamically pulls the latest threat list directly from the repository before every scan.
+- **Dual-Environment Support:**
+- `aur-scan-kde`: A Fish script optimized for KDE Plasma users, utilizing Konsole and native window holds.
+- `aur-scan-universal`: A POSIX-compliant Bash script for all other desktop environments (GNOME, XFCE, Hyprland, etc.).
+- **Active Monitoring:** Includes a systemd user timer to run background checks automatically every 12 hours.
+- **Desktop Alerts:** Triggers native desktop notifications (`notify-send`) if a compromised package is detected during a background scan.
 
 ## Installation
 
