@@ -18,13 +18,13 @@ jobs:
       - name: Fetch latest HedgeDoc threat list
         run: |
           # Grabs the upstream list and overwrites your hosted text file
-          curl -sL "INSERT_HEDGEDOC_RAW_URL_HERE" > aur-blacklist.txt
+          curl -sL "https://raw.githubusercontent.com/lenucksi/aur-malware-check/main/aur-blacklist.txt" > aur-blacklist.txt
 
       - name: Commit and push changes
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add aur-blacklist.txt
-          
+
           # This checks if the text file actually changed. If yes, it commits and pushes. If no, it does nothing.
           git diff --quiet && git diff --staged --quiet || (git commit -m "Automated daily threat list update" && git push)
