@@ -31,4 +31,7 @@ package() {
     # Install systemd user timer & service
     install -Dm644 aur-scanner.service "$pkgdir/usr/lib/systemd/user/aur-scanner.service"
     install -Dm644 aur-scanner.timer "$pkgdir/usr/lib/systemd/user/aur-scanner.timer"
+
+    # Install custom avatar icon
+    install -Dm644 avatar.png "$pkgdir/usr/share/pixmaps/aur-blacklist-scanner.png"
 }
