@@ -1,8 +1,7 @@
 [Desktop Entry]
 Name=AUR Blacklist Scan (KDE)
 Comment=Scan local AUR packages against the latest threat lists
-# --hold prevents Konsole from instantly closing when the script finishes
-Exec=konsole --hold -e fish -c "/usr/local/bin/aur-scan-kde.fish"
+Exec=konsole --hold -e fish -c "/usr/bin/aur-scan-kde"
 Icon=security-high
 Type=Application
 Terminal=false

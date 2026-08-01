@@ -1,3 +1,9 @@
+# Arch makepkg build artifacts
+/pkg/
+/src/
+/aur-blacklist-scanner/
+*.pkg.tar.*
+
 # Prerequisites
 *.d
 
