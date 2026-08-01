@@ -5,3 +5,4 @@ Exec=konsole --hold -e fish -c "/usr/bin/aur-scan-kde"
 Icon=security-high
 Type=Application
 Terminal=false
+Icon=aur-blacklist-scanner

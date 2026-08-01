@@ -5,3 +5,4 @@ Exec=/usr/bin/aur-scan-universal
 Icon=security-high
 Type=Application
 Terminal=true
+Icon=aur-blacklist-scanner
