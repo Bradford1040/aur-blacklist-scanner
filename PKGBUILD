@@ -1,6 +1,6 @@
 # Maintainer: Bradford Adams <your-email@example.com>
 pkgname=aur-blacklist-scanner-git
-pkgver=r2.97ef9f9 # This auto-updates when built
+pkgver=r3.3c4f68a # This auto-updates when built
 pkgrel=1
 pkgdesc="Automated tool to scan installed AUR packages against the latest threat lists"
 arch=('any')
