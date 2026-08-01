@@ -1,0 +1,52 @@
+name: "🐛 Bug report"
+description: Report a bug or problem with AUR-Blacklist-Scanner.
+labels: ["bug", "triage"]
+
+body:
+- type: markdown
+  attributes:
+    value: |
+      This issue form is for reporting bugs only!
+      If you have a feature request, please use [feature_request](/new?template=feature_request.yml) instead.
+- type: checkboxes
+  id: branch-confirmation
+  attributes:
+    label: AUR-Blacklist-Scanner branch
+    description: By submitting this issue, you confirm using a public release of this tool from the main branch.
+    options:
+      - label: I confirm using the main branch
+        required: true
+- type: input
+  id: de-wm
+  attributes:
+    label: DE/WM & Distro
+    description: Specify your Desktop Environment, Window Manager, and Linux distribution (e.g., CachyOS, EndeavourOS, vanilla Arch).
+    placeholder: ex. KDE Plasma 6 / Wayland / CachyOS
+  validations:
+    required: true
+- type: dropdown
+  id: execution-method
+  attributes:
+    label: Execution Method
+    description: How are you triggering the scanner when the bug occurs?
+    options:
+      - KDE Plasma Application Launcher (aur-scan-kde)
+      - Universal Application Launcher (aur-scan-universal)
+      - Terminal (Manual execution)
+      - Systemd User Timer (Background check)
+  validations:
+    required: true
+- type: textarea
+  id: what-happened
+  attributes:
+    label: Describe the bug and expected behavior
+    description: Provide a clear and concise description of the bug and why it's problematic.
+  validations:
+    required: true
+- type: textarea
+  id: additional-info
+  attributes:
+    label: Additional information and logs
+    description: |
+      If possible, attach terminal output, error messages, or screenshots.
+      Drag and drop files directly into the field.

@@ -1,0 +1,28 @@
+name: "🚀 Feature request"
+description: Suggest a new feature or improvement for AUR-Blacklist-Scanner.
+labels: ["enhancement", "triage"]
+
+body:
+- type: markdown
+  attributes:
+    value: |
+      This issue form is for suggesting features or enhancements only!
+      If you're facing a bug, please use the [bug_report](/new?template=bug_report.yml) instead.
+- type: textarea
+  id: feature-description
+  attributes:
+    label: Describe the proposed feature
+    description: >-
+      Provide a clear and detailed description of the feature or improvement you'd like to see.
+      Explain how your suggestion can enhance the tool and benefit its users.
+    placeholder: E.g., "Add support for custom alert hooks or alternative threat list sources..."
+  validations:
+    required: true
+- type: textarea
+  id: additional-context
+  attributes:
+    label: Additional context or information
+    description: |
+      If you have any more information, mockups, references, or context about your suggestion, please provide it here.
+
+      Please note, you can attach files or screenshots by dragging and dropping them directly in the field.
