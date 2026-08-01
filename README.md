@@ -1,6 +1,5 @@
 # AUR Blacklist Scanner
 
-[![Daily](https://wakatime.com/badge/github/Bradford1040/aur-blacklist-scanner.svg)](https://wakatime.com/badge/github/Bradford1040/aur-blacklist-scanner)
 [![Total](https://wakatime.com/badge/user/f18ab90b-d5ab-44a5-a771-88b32a561950/project/66e57e0f-2459-484e-b11e-f303b552324c.svg)](https://wakatime.com/badge/user/f18ab90b-d5ab-44a5-a771-88b32a561950/project/66e57e0f-2459-484e-b11e-f303b552324c)
 
 A lightweight, automated security tool for Arch Linux and Arch-based distributions (like CachyOS or EndeavourOS). It scans your locally installed AUR packages against a live threat list of known compromised packages to protect against supply-chain attacks.
