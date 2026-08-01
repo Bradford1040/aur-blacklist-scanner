@@ -1,0 +1,30 @@
+name: Daily Blacklist Update
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Runs automatically every day at midnight UTC
+  workflow_dispatch: # Gives you a button on GitHub.com to force an update anytime
+
+jobs:
+  update-list:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Grants the bot permission to push commits to your repo
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fetch latest HedgeDoc threat list
+        run: |
+          # Grabs the upstream list and overwrites your hosted text file
+          curl -sL "INSERT_HEDGEDOC_RAW_URL_HERE" > aur-blacklist.txt
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add aur-blacklist.txt
+          
+          # This checks if the text file actually changed. If yes, it commits and pushes. If no, it does nothing.
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Automated daily threat list update" && git push)
