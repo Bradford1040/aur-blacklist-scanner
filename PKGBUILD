@@ -1,3 +1,4 @@
+# shellcheck disable=SC2148
 # Maintainer: Bradford Adams <bradfordaldenadams@gmail.com.com>
 pkgname=aur-blacklist-scanner-git
 pkgver=r3.3c4f68a # This auto-updates when built
