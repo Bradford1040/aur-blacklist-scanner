@@ -1,4 +1,4 @@
-# shellcheck disable=SC2148
+# shellcheck disable=SC2148,SC2034,SC2154
 # Maintainer: Bradford Adams <bradfordaldenadams@gmail.com.com>
 pkgname=aur-blacklist-scanner-git
 pkgver=r3.3c4f68a # This auto-updates when built
@@ -14,12 +14,12 @@ source=("git+https://github.com/Bradford1040/aur-blacklist-scanner.git")
 sha256sums=('SKIP')
 
 pkgver() {
-    cd "$srcdir/${pkgname%-git}"
+    cd "$srcdir/${pkgname%-git}" || exit
     printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
 }
 
 package() {
-    cd "$srcdir/${pkgname%-git}"
+    cd "$srcdir/${pkgname%-git}" || exit
 
     # Install scripts
     install -Dm755 aur-scan-kde.fish "$pkgdir/usr/bin/aur-scan-kde"

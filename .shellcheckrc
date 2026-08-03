@@ -1,2 +1,3 @@
 # Enable checking of sourced files (equivalent to -x command-line flag)
 enable=all-external-sources
+disable=SC2034,SC2154
