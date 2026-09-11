@@ -14,6 +14,14 @@ A lightweight, automated security tool for Arch Linux and Arch-based distributio
 - **Active Monitoring:** Includes a systemd user timer to run background checks automatically every 12 hours.
 - **Desktop Alerts:** Triggers native desktop notifications (`notify-send`) if a compromised package is detected during a background scan.
 
+## Support
+
+- You can and encouraged to create and issue on GitHub but, if you
+- Need or Want **Help** click the link to join [telegram group](https://t.me/JerksOfAllTrades/2) or scan QR-code below
+- Here you will get 🤝 Support & 👨‍💻 Developer Contact
+
+![Telegram_Group](./Jerks-Of-All-Trades.png "Telegram Group, Scan QR-code with Phone")
+
 ## Installation
 
 You can build and install the package directly from source using standard Arch tooling.
